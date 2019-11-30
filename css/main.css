@@ -1899,7 +1899,7 @@ reward-button span:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cff13d;
+  background: #d4ff7c;
 }
 .feed-link,
 .chat {
@@ -2953,4 +2953,12 @@ body {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.content {
+  border-radius: 20px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(155,205,155,0.5) none repeat scroll !important;
+}
+.footer-inner {
+  color: #1d2b3a;
 }
