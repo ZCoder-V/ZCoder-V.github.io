@@ -98,17 +98,31 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="一、Tor浏览器原理Tor获取链接：  https://pan.baidu.com/s/1gKbapJBC1jA3-BYbBqVAbw  https://download.csdn.net/download/qq_40791253/10753033   简单来说Tor是一款匿名访问网络的的软件。用户通过Tor可以在因特网上进行匿名交流。 为了实现匿名目的，Tor把分散在全球的计算机集合起来形成一个">
+<meta name="keywords" content="Tor浏览器 匿名浏览">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://zcoder-v.github.io/2019/05/28/hello-world/index.html">
+<meta property="og:title" content="洋葱浏览器—匿名浏览">
+<meta property="og:url" content="https://zcoder-v.github.io/2019/12/01/洋葱浏览器—匿名浏览/index.html">
 <meta property="og:site_name" content="ZCoder`s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="一、Tor浏览器原理Tor获取链接：  https://pan.baidu.com/s/1gKbapJBC1jA3-BYbBqVAbw  https://download.csdn.net/download/qq_40791253/10753033   简单来说Tor是一款匿名访问网络的的软件。用户通过Tor可以在因特网上进行匿名交流。 为了实现匿名目的，Tor把分散在全球的计算机集合起来形成一个">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-01T12:46:27.273Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192515565.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192622216.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192634119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192649313.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192703524.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192716173.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031192733932.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031193117406.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2018103119314062.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031193218648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031193428277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181031193451935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-12-01T13:38:49.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="洋葱浏览器—匿名浏览">
+<meta name="twitter:description" content="一、Tor浏览器原理Tor获取链接：  https://pan.baidu.com/s/1gKbapJBC1jA3-BYbBqVAbw  https://download.csdn.net/download/qq_40791253/10753033   简单来说Tor是一款匿名访问网络的的软件。用户通过Tor可以在因特网上进行匿名交流。 为了实现匿名目的，Tor把分散在全球的计算机集合起来形成一个">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181031192515565.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70">
 
 
 
@@ -116,7 +130,7 @@
 
   
   
-  <link rel="canonical" href="https://zcoder-v.github.io/2019/05/28/hello-world/">
+  <link rel="canonical" href="https://zcoder-v.github.io/2019/12/01/洋葱浏览器—匿名浏览/">
 
 
 
@@ -126,7 +140,7 @@
   };
 </script>
 
-  <title>Hello World | ZCoder`s Blog</title>
+  <title>洋葱浏览器—匿名浏览 | ZCoder`s Blog</title>
   
 
 
@@ -339,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zcoder-v.github.io/2019/05/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://zcoder-v.github.io/2019/12/01/洋葱浏览器—匿名浏览/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZCoder">
@@ -356,7 +370,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">洋葱浏览器—匿名浏览
 
               
             
@@ -382,28 +396,34 @@
                 
               
 
-              <time title="创建时间：2019-05-28 18:41:13" itemprop="dateCreated datePublished" datetime="2019-05-28T18:41:13+08:00">2019-05-28</time>
+              <time title="创建时间：2019-12-01 21:20:09 / 修改时间：21:38:49" itemprop="dateCreated datePublished" datetime="2019-12-01T21:20:09+08:00">2019-12-01</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-12-01 20:46:27" itemprop="dateModified" datetime="2019-12-01T20:46:27+08:00">2019-12-01</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/其他/" itemprop="url" rel="index"><span itemprop="name">其他</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -433,16 +453,28 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h1><span id="一-tor浏览器原理">一、Tor浏览器原理</span></h1><p>Tor获取链接：</p>
+<ul>
+<li><p><a href="https://pan.baidu.com/s/1gKbapJBC1jA3-BYbBqVAbw" target="_blank" rel="noopener">https://pan.baidu.com/s/1gKbapJBC1jA3-BYbBqVAbw</a></p>
+</li>
+<li><p><a href="https://download.csdn.net/download/qq_40791253/10753033" target="_blank" rel="noopener">https://download.csdn.net/download/qq_40791253/10753033</a></p>
+</li>
+</ul>
+<p>简单来说Tor是一款匿名访问网络的的软件。用户通过Tor可以在因特网上进行匿名交流。 为了实现匿名目的，Tor把分散在全球的计算机集合起来形成一个加密回路。当你通过Tor网络访问互联网时，你的网络数据会通过多台 电脑迂回发送，就像洋葱包裹其核心那样掩饰你的网络活动，信息传输在每一步都被加密，无从得知你所处位置和信息传输目的地。因 此Tor Browser也被称为洋葱浏览器。 Tor通过身份与路由相分离而保护隐私。日常生活中，使用电脑或路由的IP地址浏览网页，所以发送的每一次请求都携带该地址，信息 从该地址返回。然而当你使用Tor时，你的聊天信息或输入的网址不会直接连接到目标地址，而是通过Tor的志愿者节点的网络路由，在 退出Tor网络转到终端之前至少通过三个节点。接受你请求的网站不知道你的IP地址，即使入口中继也不知道Tor回路上的任何节点。大 多数用户感觉不到Tor上网与用Firefox浏览器上网有何不同。但是通过各中继迂回使上网速度变慢了，默认设置又出于安全原因而使得 某些功能（包括视频播放插件）失效。</p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192515565.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 1"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192622216.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 2"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192634119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 3"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192649313.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 4"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192703524.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 5"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192716173.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 6"></p>
+<p><img src="https://img-blog.csdnimg.cn/20181031192733932.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 7"></p>
+<h1><span id="二-安装使用tor浏览器">二、安装使用Tor浏览器</span></h1><p>洋葱浏览器是Tor项目组发布的一款基于火狐浏览器的浏览器。为了更好的使你匿名上网，请谨慎修改该浏览器的设置参数。<br>下面演示老版Tor的安装，安装完成后再更新一下就OK了，运行安装包可以不选择默认位置安装。根据下图设置Tor网络即可通过Tor访问互联网。</p>
+<h2><span id="1-选择语言简体中文">1. 选择语言（简体中文）</span></h2><p><img src="https://img-blog.csdnimg.cn/20181031193117406.png" alt="Tor 8"></p>
+<h2><span id="2-先不慌连接需要进行一些配置">2. 先不慌连接，需要进行一些配置</span></h2><p><img src="https://img-blog.csdnimg.cn/2018103119314062.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 9"></p>
+<h2><span id="3-选择tor-is-censored-in-my-country-select-a-built-in-bridge-选择meek-azure">3. 选择Tor is censored in my country — Select a built-in bridge — 选择meek-azure</span></h2><p><img src="https://img-blog.csdnimg.cn/20181031193218648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 10"></p>
+<h2><span id="4-连接">4. 连接</span></h2><p><img src="https://img-blog.csdnimg.cn/20181031193428277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 11"></p>
+<h2><span id="5-等待连接耗时可能有点长">5. 等待连接，耗时可能有点长</span></h2><p><img src="https://img-blog.csdnimg.cn/20181031193451935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzkxMjUz,size_16,color_FFFFFF,t_70" alt="Tor 12"></p>
+<h2><span id="6-进去后由于版本较老选择检查更新">6. 进去后由于版本较老，选择检查更新。</span></h2><h2><span id="7-ok">7. OK</span></h2>
       
     </div>
 
@@ -509,7 +541,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://zcoder-v.github.io/2019/05/28/hello-world/" title="Hello World">https://zcoder-v.github.io/2019/05/28/hello-world/</a>
+    <a href="https://zcoder-v.github.io/2019/12/01/洋葱浏览器—匿名浏览/" title="洋葱浏览器—匿名浏览">https://zcoder-v.github.io/2019/12/01/洋葱浏览器—匿名浏览/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -519,6 +551,15 @@
     
 
     <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/Tor浏览器-匿名浏览/" rel="tag"># Tor浏览器 匿名浏览</a>
+          
+        </div>
       
 
       
@@ -541,15 +582,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/12/01/安装部署Shadowsocks服务器的正确上网姿势/" rel="next" title="安装部署Shadowsocks服务器的正确上网姿势">
+                <i class="fa fa-chevron-left"></i> 安装部署Shadowsocks服务器的正确上网姿势
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/01/安装部署Shadowsocks服务器的正确上网姿势/" rel="prev" title="安装部署Shadowsocks服务器的正确上网姿势">
-                安装部署Shadowsocks服务器的正确上网姿势 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -740,7 +781,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">一、Tor浏览器原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">二、安装使用Tor浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">1. 选择语言（简体中文）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">2. 先不慌连接，需要进行一些配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">3. 选择Tor is censored in my country — Select a built-in bridge — 选择meek-azure</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">4. 连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">5. 等待连接，耗时可能有点长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.6.</span> <span class="nav-text">6. 进去后由于版本较老，选择检查更新。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.7.</span> <span class="nav-text">7. OK</span></a></li></ol></li></ol></div>
             
 
           </div>
