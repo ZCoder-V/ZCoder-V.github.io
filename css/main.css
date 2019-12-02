@@ -1899,7 +1899,7 @@ reward-button span:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4ff7c;
+  background: #a8b013;
 }
 .feed-link,
 .chat {
@@ -2915,7 +2915,7 @@ ul.breadcrumb li+li:last-child {
   text-overflow: ellipsis;
 }
 body {
-  background: url("/images/bg1.jpg") no-repeat;
+  background: url("/images/back1.jpg") no-repeat;
 /* 背景图垂直、水平均居中 */
   background-position: center center;
 /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
@@ -2957,7 +2957,7 @@ body {
 .content {
   border-radius: 20px;
   padding: 30px 60px 30px 60px;
-  background: rgba(155,205,155,0.5) none repeat scroll !important;
+  background: rgba(60,179,113,0.3) none repeat scroll !important;
 }
 .footer-inner {
   color: #1d2b3a;
